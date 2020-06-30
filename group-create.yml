@@ -1,0 +1,22 @@
+---
+
+# Create Groups
+- !group
+  id: dba
+  owner: !group dap_admin
+  annotations:
+    Department: Database Admins
+
+- !group
+  id: dev
+  owner: !group dap_admin
+  annotations:
+    Department: Software Engineering
+
+- !group
+  id: sysops
+  owner: !group dap_admin
+  annotations:
+    Department: Systems Operations
+
+...

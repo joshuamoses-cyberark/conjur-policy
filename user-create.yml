@@ -1,0 +1,36 @@
+---
+
+# Create Users (native to DAP)
+- !user
+  id: dba01
+  owner: !group dap_admin
+  annotations:
+   Email: dba01@cyber-ark-demo.local
+   Title: Database Administrator
+   Department: DBA
+
+- !user
+  id: developer01
+  owner: !group dap_admin
+  annotations:
+    Email: developer01@cyber-ark-demo.local
+    Title: Software Developer
+    Department: Software Engineering
+
+- !user
+  id: sysadmin01
+  owner: !group dap_admin
+  annotations:
+    Email: sysadmin01@cyber-ark-demo.local
+    Title: Systems Administrator
+    Department: Systems Operations
+
+- !user
+  id: testuser01
+  owner: !group dap_admin
+  annotations:
+    Email: testuser01@cyber-ark-demo.local
+    Title: Test User
+    Department: Test User
+
+...
