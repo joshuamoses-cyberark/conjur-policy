@@ -1,0 +1,16 @@
+---
+
+# Assign Users to Group
+- !grant
+  role: !group dba
+  member: !user dba01
+
+- !grant
+  role: !group dev
+  member: !user developer01
+
+- !grant
+  role: !group sysops
+  member: !user sysadmin01
+
+...

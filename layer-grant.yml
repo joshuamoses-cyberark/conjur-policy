@@ -1,0 +1,12 @@
+---
+
+# Define Layer Membership
+- !grant
+  role: !layer
+  member: !host linsrv01
+
+- !grant
+  role: !layer
+  member: !host linsrv02
+
+...

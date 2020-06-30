@@ -1,0 +1,29 @@
+---
+
+# Create Security Admin Users
+- !user
+  id: jmoses
+  owner: !group dap_admin
+  annotations:
+    Email: joshua.moses@cyberark.com
+    Title: DAP Security Administrator
+    Department: InfoSec
+
+- !user
+  id: jmoses1
+  owner: !group dap_admin
+  annotations:
+    Email: Joshua.moses@cyberark.com
+    Title: DAP Security Administrator
+    Department: InfoSec
+
+# Assign Users to Group
+- !grant
+  role: !group dap_admin
+  member: !user jmoses
+
+- !grant
+  role: !group dap_admin
+  member: !user jmoses2
+
+...
