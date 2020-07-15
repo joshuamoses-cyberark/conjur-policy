@@ -1,0 +1,10 @@
+---
+
+- !permit
+  role: !host host1
+  privileges: [ read, execute ]
+  resources: 
+  - !variable myapp/db/db_password
+  - !variable myapp/db/db_username
+
+...
